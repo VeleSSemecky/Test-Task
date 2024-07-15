@@ -1,0 +1,117 @@
+[versions]
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.3"
+activityCompose = "1.9.0"
+composeBom = "2024.06.00"
+
+#Plugins
+agp = "8.5.1"
+kotlin = "1.9.0"
+safeargs = "2.7.7"
+
+#android
+minSdk = "24"
+targetSdk = "34"
+compileSdk = "34"
+versionCode = "1"
+versionName = "1.0"
+applicationId = "com.example.test"
+
+#DI
+inject = "1"
+dagger = "2.49"
+
+#Coroutines
+coroutines = "1.8.0"
+
+#Room
+room = "2.6.1"
+
+#Network
+gson = "2.10.1"
+okHttp = "4.9.3"
+retrofit = "2.9.0"
+
+#UI
+materialComponents = "1.12.0"
+appCompat = "1.7.0"
+constraintLayout = "2.1.4"
+swiperefreshLayout = "1.1.0"
+viewPager = "1.1.0"
+runner = "1.0.2"
+espressoCoreVersion = "3.0.2"
+appcompatV7 = "28.0.0"
+work-runtime = "2.9.0"
+
+#Utils
+securityCrypto = "1.0.0"
+glide = "4.14.2"
+
+#Navigation
+navigation = "2.7.7"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+#androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+#androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+#androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+#androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+#androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+#androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+#androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+#androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+#androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+#DI
+inject = { group = "javax.inject", name = "javax.inject", version.ref = "inject" }
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
+dagger-android = { group = "com.google.dagger", name = "dagger-android-support", version.ref = "dagger" }
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+dagger-android-processor = { group = "com.google.dagger", name = "dagger-android-processor", version.ref = "dagger" }
+
+#Coroutines
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+#Room
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+#Network
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+#UI
+constraint-layout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintLayout" }
+app-compat = { group = "androidx.appcompat" , name = "appcompat", version.ref = "appCompat" }
+material-components = { group = "com.google.android.material", name = "material", version.ref = "materialComponents" }
+swiperefresh-layout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshLayout" }
+view-pager = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewPager" }
+
+#Utils
+security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "securityCrypto" }
+glide = { group =  "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group =  "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+glide-okhttp3 = { group =  "com.github.bumptech.glide", name = "okhttp3-integration", version.ref = "glide" }
+work-runtime = { group =  "androidx.work", name = "work-runtime-ktx", version.ref = "work-runtime" }
+
+#Navigation
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation"}
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation"}
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+androidx-navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "safeargs" }

@@ -1,0 +1,14 @@
+TODO list
+
+1. Add repository and UseCase without using DB and SharedPreferences directly
+2. Add error handling such as:
+   Invalid input in settings.
+   Ensuring notification rescheduling works as expected after reboots.
+3. Add proguard rule for release build
+3. Unified using WorkManager
+4. Finished interval between dismissals and dismisses the notification
+5. Finished number of boot events per day
+6. Ensure that the notification scheduling and boot event logging work correctly under various conditions.
+7. Refactor the code to follow SOLID principles more closely and improve readability.
+8. Improve the UI/UX design for a better user experience.
+9.Add comments and documentation for better understanding and maintenance of the code.
